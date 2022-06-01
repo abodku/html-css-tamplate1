@@ -298,6 +298,11 @@ body {
   width: 300px;
   background-color: white;
 }
+@media (max-width:550px){
+.portfolio .portfolio-content .card {
+  margin-left: calc((100% - 300px) / 2);
+}
+}
 .portfolio .portfolio-content .card h3 {
   margin: 0;
   padding: 20px;
