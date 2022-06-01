@@ -1,7 +1,13 @@
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
+  --text-color-special-heading: #ebeced;
+  --text-color-special-heading-p: #797979;
+  --text-color-feat-p: #777;
+  --background-color-1: #f6f6f6;
+  --main-pading: 60px 0;
 }
+
 
 * {
   box-sizing: border-box;
@@ -40,7 +46,7 @@ body {
 
 
 .special-heading {
-  color: #ebeced;
+  color: var(--text-color-special-heading);
   font-size: 6rem;
   text-align: center;
   font-weight: 800;
@@ -50,7 +56,7 @@ body {
 .special-heading + p {
   margin: -30px 0 0;
   text-align: center;
-  color: #797979;
+  color: var(--text-color-special-heading-p);
   font-size: 1.4rem;
 }
 @media (max-width:767px) {
@@ -119,7 +125,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #f6f6f6;
+  background-color: var(--background-color-1);
   position: absolute;
   right: 0;
   min-width: 150px;
@@ -135,7 +141,7 @@ body {
   width: 0;
   height: 0;
   border: 10px solid black;
-  border-color: transparent transparent #f6f6f6 transparent;
+  border-color: transparent transparent var(--background-color-1) transparent;
   top: -20px;
   right: 5px;
   position: absolute;
@@ -198,8 +204,8 @@ body {
 
 
 .features {
-  padding: 60px 0;
-  background-color: #f6f6f6;
+  padding: var(--main-pading);
+  background-color: var(--background-color-1);
 }
 .features .container {
   display: grid;
@@ -220,14 +226,14 @@ body {
 }
 .features .feat p {
   line-height: 1.8;
-  color: #777;
+  color: var(--text-color-feat-p);
   font-size: 1.1rem;
 }
 
 
 
 .services {
-  padding: 60px 0;
+  padding: var(--main-pading);
 }
 .services .services-content {
   display: grid;
@@ -285,8 +291,8 @@ body {
 
 
 .portfolio {
-  padding: 60px 0;
-  background-color: #f6f6f6;
+  padding: var(--main-pading);
+  background-color: var(--background-color-1);
 }
 .portfolio .portfolio-content {
   display: grid;
@@ -309,7 +315,7 @@ body {
 }
 .portfolio .portfolio-content .card p {
   padding: 20px;
-  color: #777;
+  color: var(--text-color-feat-p);
   line-height: 1.6;
 }
 .portfolio .portfolio-content .card img {
@@ -319,7 +325,7 @@ body {
 
 
 .about {
-  padding: 60px 0;
+  padding: var(--main-pading);
 }
 .about .about-content {
   display: grid;
@@ -367,7 +373,7 @@ body {
   height: calc(100% + 100px);
   top: -50px;
   left: -20px;
-  background-color: #ebeced;
+  background-color: var(--text-color-special-heading);
   z-index: -1;
 }
 .about .about-content .image::after {
@@ -387,7 +393,7 @@ body {
   font-weight: 600;
 }
 .about .about-info p:last-child {
-  color: #777;
+  color: var(--text-color-feat-p);
   margin-top: 70px;
   position: relative;
 }
@@ -420,8 +426,8 @@ img:not(.logo):hover {
 
 
 .contact {
-  background-color: #f6f6f6;
-  padding: 60px 0;
+  background-color: var(--background-color-1);
+  padding: var(--main-pading);
 }
 .contact .contact-content {
   display: grid;
